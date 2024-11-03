@@ -6,7 +6,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
 with st.form("my_form"):
-    st.write("Welcome to SouthWorst Airlines Automated Customer Service Portal")
+    st.header("Welcome to SouthWorst Airlines Automated Customer Service Portal")
     user_prompt = st.text_input("Tell me about your most recent air travel experience.")
     # Every form must have a submit button.
     submitted = st.form_submit_button("Submit")
