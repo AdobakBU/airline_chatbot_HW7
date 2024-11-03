@@ -116,4 +116,4 @@ with st.form("my_form"):
         langchain.debug = False
 
         ai_response = (full_chain.invoke({"request": str(user_prompt)}))
-        st.write(ai_response["content"])
+        st.write(ai_response[0])
