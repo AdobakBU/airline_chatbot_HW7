@@ -11,7 +11,7 @@ with st.form("my_form"):
     # Every form must have a submit button.
     submitted = st.form_submit_button("Submit")
     if submitted:
-        llm = ChatOpenAI(api_key=MyOpenAIKey, model="gpt-4o")
+        llm = ChatOpenAI(api_key='MyOpenAIKey', model="gpt-4o")
         ### Create a template to handle the case where the price is not mentioned.
         sentiment_template = """You are an expert at airline customer service.
         From the following text, determine whether the customer had a positive or negative experience.
